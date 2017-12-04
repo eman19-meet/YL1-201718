@@ -46,12 +46,15 @@ class Hexagon(Turtle):
 			self.right(60)
 
 
+<<<<<<< HEAD
 
 
 
 
 
 
+=======
+>>>>>>> 80cbd8bde94fe111bcc6cc928f7a1d85ef6538f6
 
 	
 

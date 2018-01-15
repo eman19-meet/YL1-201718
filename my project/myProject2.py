@@ -29,4 +29,3 @@ class Ball(Turtle):
 			self.goto(new_x , new_y - self.dy)
 		if down_side_ball < -screen_height/2:
 			self.goto(new_x , new_y + self.dy)
-

@@ -1,6 +1,6 @@
 import time
 import random
-from ball.py import Ball
+from ball import Ball
 
 turtle.tracer(0)
 turtle.hideturtle()
@@ -37,3 +37,15 @@ for i in range(NUMBER_OF_BALLS):
 	MY_BALL.append(new_ball)
 
 #PART 1 : MOVE ALL BALLS
+
+def move_all_balls():
+	for i in range (BALLS):
+		new_ball.move(SCREEN_WIDTH,SCREEN_HEIGHT)
+
+#PART 2: CHECK FOR BALL COLLISION
+
+def collide(ball_a, ball_b):
+	if ball_a.r == ball_b.r and ball_a.pos() == ball_b.pos()
+		return False
+	D = math.sqrt(math.pow((ball_b.pos()[0]-ball_a.pos()[0]),2) + math.pow((ball_b.pos()[1]-ball_a.pos()[1],2))
+		#I finished till the distance of the 2 balls but I dont think its 100% right

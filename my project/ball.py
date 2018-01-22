@@ -1,5 +1,4 @@
-import turtle
-
+from turtle import *
 class Ball(Turtle):
 	def __init__(self,x,y,dx,dy,r,color):
 		Turtle.__init__(self)

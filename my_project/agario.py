@@ -10,13 +10,14 @@ RUNNING=True
 SLEEP=0.0077
 SCREEN_WIDTH=turtle.getcanvas().winfo_width()/2
 SCREEN_HEIGHT=turtle.getcanvas().winfo_height()/2
+turtle.speed(5)
 
 #PART 0 : CREATING THE BALLS
 
-MY_BALL=Ball(100,100,3,3,10,"blue")
+MY_BALL=Ball(400,400,50,30,30,"yellow")
 NUMBER_OF_BALLS=5
-MINIMUM_BALL_RADIUS=10
-MAXIMUM_BALL_RADIUS=100
+MINIMUM_BALL_RADIUS=25
+MAXIMUM_BALL_RADIUS=25
 MINIMUM_BALL_DX=-2
 MINIMUM_BALL_DY=-2
 MAXIMUM_BALL_DY=2
@@ -135,7 +136,8 @@ def movearound(event):
 turtle.getcanvas().bind("<Motion>", movearound)
 turtle.getscreen().listen()
 
-#PART 6 : THE WHILE LOOP 
+#PART 6 : THE WHILE LOOP
+score=0 
 while RUNNING == True:
 	if SCREEN_WIDTH != turtle.getcanvas().winfo_width()/2 or SCREEN_HEIGHT != turtle.getcanvas().winfo_height()/2:
 		SCREEN_WIDTH=turtle.getcanvas().winfo_width()/2
@@ -146,3 +148,5 @@ while RUNNING == True:
 	RUNNING = check_myball_collision()
 	turtle.getscreen().update()
 	time.sleep(SLEEP)
+
+	
